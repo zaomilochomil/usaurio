@@ -1,0 +1,25 @@
+package ejercicio;
+
+import javax.swing.JOptionPane;
+
+import ejercicio.usuario;
+public class Principal{
+
+	public static void main(String[] args) {
+		
+		usuario usuario = new usuario("","","","");
+		
+		String nombre=JOptionPane.showInputDialog("ingresa tu nombre");
+		usuario.setNombre(nombre);
+		
+		String direccion=JOptionPane.showInputDialog("ingresa tu direccion");
+		usuario.setDireccion(direccion);
+		
+		String telefono=JOptionPane.showInputDialog("ingresa tu numero telefonico");
+		usuario.setTelefono(telefono);
+		
+		String curp=JOptionPane.showInputDialog("ingresa tu CURP");
+		usuario.setCurp(curp);
+		
+		JOptionPane.showMessageDialog(null,"tu eres: "+ usuario.toString());}}
+	
